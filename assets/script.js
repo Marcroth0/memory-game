@@ -41,6 +41,7 @@ function arrangeCards(array) {
 
 let cardsId = [];
 function flipCards() {
+    this.classList.add("flip");
     this.setAttribute("src", cardArray[this.id].img);
     cardsId.push(this.id);
     if (cardsId.length === 2) {
@@ -57,6 +58,8 @@ function checkForMatch() {
     } else {
         imageOne.setAttribute("src", "assets/images/background.jpg");
         imageTwo.setAttribute("src", "assets/images/background.jpg");
+        imageOne.classList.remove("flip");
+        imageTwo.classList.remove("flip");
     }
     cardsId = [];
 }
