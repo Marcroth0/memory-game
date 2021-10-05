@@ -16,7 +16,7 @@ let cardArray = [
 document.addEventListener("DOMContentLoaded", function () {
     let grid = document.querySelector(".grid");
     createBoard(grid, cardArray);
-    arrangeCards(array);
+    arrangeCards(cardArray);
 });
 
 function createBoard(grid, array) {
@@ -26,13 +26,37 @@ function createBoard(grid, array) {
         img.setAttribute("id", i);
         grid.appendChild(img);
     }
-    imgs = document.querySelectorAll("img");
+    let imgs = document.querySelectorAll("img");
     for (let i = 0; i < imgs.length; i++) {
-        imgs[i].addEventListener("click", null);
+        imgs[i].addEventListener("click", flipCards);
     }
 }
 
 //Randomly sort cards in the Array
 function arrangeCards(array) {
     array.sort(() => 0.5 - Math.random());
+}
+
+//flip the cards
+
+let cardsId = [];
+function flipCards() {
+    this.setAttribute("src", cardArray[this.id].img);
+    cardsId.push(this.id);
+    if (cardsId.length === 2) {
+        setTimeout(checkForMatch, 500);
+    }
+}
+
+//Check for a match
+function checkForMatch() {
+    let imageOne = document.getElementById(cardsId[0]);
+    let imageTwo = document.getElementById(cardsId[1]);
+    if (imageOne.src === imageTwo.src && imageOne.id != imageTwo.id) {
+        alert("Match!");
+    } else {
+        imageOne.setAttribute("src", "assets/images/background.jpg");
+        imageTwo.setAttribute("src", "assets/images/background.jpg");
+    }
+    cardsId = [];
 }
