@@ -1,8 +1,8 @@
 * {
     margin: 0;
-    padding:0;
-    box-sizing:border-box;
-    text-align:center;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -11,65 +11,61 @@ body {
 
 .score {
     color: #fff;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
 }
 
 .click {
     color: #fff;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
 }
 
-.grid { 
-    width: 400px; 
-    height: 300px;; 
+.grid {
+    width: 400px;
+    height: 300px;
     align-content: center;
-    flex-wrap: wrap; 
-    margin: 60px auto; 
+    flex-wrap: wrap;
+    margin: 60px auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    } 
-    
-.grid img { 
-    margin: 2px; 
-    transform-style: preserve-3d; 
+}
+
+.grid img {
+    margin: 2px;
+    transform-style: preserve-3d;
     border: 2px solid black;
     width: 100px;
     height: 100px;
-    transition: transform 0.5s; 
-    border-radius:10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-} 
+    transition: transform 0.5s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
-.grid img.flip { 
-    transform: rotateY(180deg); 
-} 
-    
+.grid img.flip {
+    transform: rotateY(180deg);
+}
+
 .btn {
-    height:30px;
+    height: 30px;
     width: 100px;
-    display:inline-block;
+    display: inline-block;
     margin: 80px;
     text-align: center;
-    position:relative;
-    border-radius:10px;
-    transition:1s;
+    position: relative;
+    border-radius: 10px;
+    transition: 1s;
 }
-        
-.data { 
-    display: flex; 
-    justify-content: space-between; 
-    padding: 20px 30px; 
-    font-size: 23px; 
-    display:inline-block;
-    position:relative;
-} 
-        
-.data span { 
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-size: 23px;
+    display: inline-block;
+    position: relative;
+}
+
+.data span {
     color: rgb(255, 255, 255);
-    font-size: 30px; 
+    font-size: 30px;
 }
