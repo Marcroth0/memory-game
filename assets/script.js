@@ -13,4 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "rome", img: "assets/images/rome.png" },
         { name: "rome", img: "assets/images/rome.png" },
     ];
+
+    let grid = document.querySelector(".grid");
+    createBoard(grid, cardArray);
 });
+
+function createBoard(grid, array) {
+    for (let i = 0; i < array.length; i++) {
+        let img = document.createElement("img");
+        img.setAttribute("src", "assets/images/background.jpg");
+        img.setAttribute("id", i);
+        grid.appendChild(img);
+    }
+    imgs = document.querySelectorAll("img");
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].addEventListener("click", null);
+    }
+}
