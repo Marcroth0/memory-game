@@ -19,10 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
     arrangeCards(cardArray);
 });
 
+let theme = "background.jpg";
+
 function createBoard(grid, array) {
     for (let i = 0; i < array.length; i++) {
         let img = document.createElement("img");
-        img.setAttribute("src", "assets/images/background.jpg");
+        img.setAttribute("src", `assets/images/${theme}`);
         img.setAttribute("id", i);
         grid.appendChild(img);
     }
@@ -56,8 +58,8 @@ function checkForMatch() {
     if (imageOne.src === imageTwo.src && imageOne.id != imageTwo.id) {
         alert("Match!");
     } else {
-        imageOne.setAttribute("src", "assets/images/background.jpg");
-        imageTwo.setAttribute("src", "assets/images/background.jpg");
+        imageOne.setAttribute("src", `assets/images/${theme}`);
+        imageTwo.setAttribute("src", `assets/images/${theme}`);
         imageOne.classList.remove("flip");
         imageTwo.classList.remove("flip");
     }
@@ -69,4 +71,30 @@ function resetGame() {
     grid.innerHTML = null;
     createBoard(grid, cardArray);
     arrangeCards(cardArray);
+}
+
+function dayTime() {
+    let imgs = document.getElementsByTagName("img");
+    let labels = document.getElementsByClassName("font");
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].setAttribute("src", "assets/images/day-time.jpg");
+        imgs[i].style.borderColor = "white";
+    }
+    document.body.style.backgroundImage = "url('assets/images/day-time.jpg')";
+    labels[0].style.color = "black";
+    labels[1].style.color = "black";
+    theme = "day-time.jpg";
+}
+
+function nightTime() {
+    let imgs = document.getElementsByTagName("img");
+    let labels = document.getElementsByClassName("font");
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].setAttribute("src", "assets/images/background.jpg");
+        imgs[i].style.borderColor = "black";
+    }
+    document.body.style.backgroundImage = "url('assets/images/background.jpg')";
+    labels[0].style.color = "white";
+    labels[1].style.color = "white";
+    theme = "background.jpg";
 }
