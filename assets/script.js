@@ -63,3 +63,10 @@ function checkForMatch() {
     }
     cardsId = [];
 }
+
+function resetGame() {
+    let grid = document.querySelector(".grid");
+    grid.innerHTML = null;
+    createBoard(grid, cardArray);
+    arrangeCards(cardArray);
+}
