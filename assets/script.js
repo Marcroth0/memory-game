@@ -17,9 +17,25 @@ document.addEventListener("DOMContentLoaded", function () {
     let grid = document.querySelector(".grid");
     createBoard(grid, cardArray);
     arrangeCards(cardArray);
+
+    let rulesBtn = document.getElementsByClassName("rules-btn");
+    rulesBtn[0].addEventListener("click", showRules);
+    let startBtn = document.getElementsByClassName("play-btn");
+    startBtn[0].addEventListener("click", removeRules);
 });
 
 let theme = "background.jpg";
+const closeBtn = document.getElementById("close-btn");
+
+function showRules() {
+    let rulesSct = document.getElementsByClassName("rules-sctn");
+    rulesSct[0].style.display = "flex";
+}
+
+function removeRules() {
+    let rulesSct = document.getElementsByClassName("rules-sctn");
+    rulesSct[0].style.display = "none";
+}
 
 function createBoard(grid, array) {
     for (let i = 0; i < array.length; i++) {

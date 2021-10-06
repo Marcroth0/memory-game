@@ -106,3 +106,23 @@ body {
 .hvr-grow:active {
     transform: scale(1.1);
 }
+
+.rules-sctn {
+    width: 40%;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    margin: 15% 30% 0 30%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    z-index: 99;
+}
+
+.rules {
+    margin: 50px;
+    display: flex;
+    border-color: black;
+    border-radius: 40px;
+}
