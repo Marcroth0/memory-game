@@ -57,6 +57,8 @@ function checkForMatch() {
     let imageTwo = document.getElementById(cardsId[1]);
     if (imageOne.src === imageTwo.src && imageOne.id != imageTwo.id) {
         alert("Match!");
+        imageOne.style.boxShadow = "0px 0px 5px #fff";
+        imageTwo.style.boxShadow = "0px 0px 5px #fff";
     } else {
         imageOne.setAttribute("src", `assets/images/${theme}`);
         imageTwo.setAttribute("src", `assets/images/${theme}`);
