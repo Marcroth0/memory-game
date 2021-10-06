@@ -26,12 +26,13 @@ body {
     flex-wrap: wrap;
     margin: 60px auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 140px;
 }
 
 .grid img {
     margin: 2px;
     transform-style: preserve-3d;
-    border: 2px solid black;
+    border: 2px solid rgb(236, 229, 229);
     width: 100px;
     height: 100px;
     transition: transform 0.5s;
@@ -49,11 +50,14 @@ body {
     height: 30px;
     width: 100px;
     display: inline-block;
-    margin: 80px;
     text-align: center;
     position: relative;
     border-radius: 10px;
     transition: 1s;
+}
+.control-btns {
+    display: flex;
+    justify-content: center;
 }
 
 .data {
@@ -71,4 +75,24 @@ body {
 }
 .font {
     color: white;
+}
+
+.theme {
+    margin-top: 10px;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }

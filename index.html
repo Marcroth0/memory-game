@@ -9,10 +9,12 @@
         <title>Memory game</title>
     </head>
     <body>
-        <label class="font" for="day">Day</label>
-        <input type="radio" onclick="dayTime()" name="time" />
-        <label class="font" for="night">Night</label>
-        <input type="radio" onclick="nightTime()" name="time" />
+        <div class="theme">
+            <label class="font" for="day">Day</label>
+            <input type="radio" onclick="dayTime()" name="time" />
+            <label class="font" for="night">Night</label>
+            <input type="radio" onclick="nightTime()" name="time" checked />
+        </div>
         <div class="container">
             <div class="data">
                 <div class="score">
@@ -23,7 +25,7 @@
                 </div>
             </div>
             <div class="grid"></div>
-            <div>
+            <div class="control-btns">
                 <button class="reset-btn btn" onclick="resetGame()">
                     Reset
                 </button>

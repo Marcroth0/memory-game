@@ -78,7 +78,7 @@ function dayTime() {
     let labels = document.getElementsByClassName("font");
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].setAttribute("src", "assets/images/day-time.jpg");
-        imgs[i].style.borderColor = "white";
+        // imgs[i].style.borderColor = "white";
     }
     document.body.style.backgroundImage = "url('assets/images/day-time.jpg')";
     labels[0].style.color = "black";
@@ -91,7 +91,7 @@ function nightTime() {
     let labels = document.getElementsByClassName("font");
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].setAttribute("src", "assets/images/background.jpg");
-        imgs[i].style.borderColor = "black";
+        // imgs[i].style.borderColor = "black";
     }
     document.body.style.backgroundImage = "url('assets/images/background.jpg')";
     labels[0].style.color = "white";
