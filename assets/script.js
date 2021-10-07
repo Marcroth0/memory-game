@@ -109,26 +109,30 @@ function resetGame() {
 
 function dayTime() {
     let imgs = document.getElementsByTagName("img");
-    let labels = document.getElementsByClassName("font");
+    let btns = document.getElementsByClassName("btn");
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].setAttribute("src", "assets/images/day-time.jpg");
-        imgs[i].style.borderColor = "white";
+        imgs[i].style.borderColor = "#eaddcb";
+        document.body.style.backgroundImage =
+            "url('assets/images/day-time.jpg')";
     }
-    document.body.style.backgroundImage = "url('assets/images/day-time.jpg')";
-    labels[0].style.color = "black";
-    labels[1].style.color = "black";
-    theme = "day-time.jpg";
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].style.backgroundColor = "#caa865";
+    }
 }
 
 function nightTime() {
     let imgs = document.getElementsByTagName("img");
-    let labels = document.getElementsByClassName("font");
+    let btns = document.getElementsByClassName("btn");
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].setAttribute("src", "assets/images/grid-img.png");
-        // imgs[i].style.borderColor = "black";
+        imgs[i].style.borderColor = "#086068";
+        document.body.style.backgroundImage =
+            "url('assets/images/background.jpg')";
     }
-    document.body.style.backgroundImage = "url('assets/images/background.jpg')";
-    labels[0].style.color = "white";
-    labels[1].style.color = "white";
-    theme = "grid-img.jpg";
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].style.backgroundColor = "white;";
+    }
 }
+
+// theme = "grid-img.jpg";
