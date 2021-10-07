@@ -134,4 +134,5 @@ function nightTime() {
     for (let i = 0; i < btns.length; i++) {
         btns[i].style.backgroundColor = "#01394a";
     }
+    theme = "grid-img.png";
 }
