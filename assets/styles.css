@@ -35,7 +35,7 @@ body {
 .grid img {
     margin: 2px;
     transform-style: preserve-3d;
-    border: 2px solid rgb(236, 229, 229);
+    border: 2px solid #086068;
     width: 120px;
     height: 120px;
     transition: transform 0.5s;

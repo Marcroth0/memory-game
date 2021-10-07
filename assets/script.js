@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     startBtn[0].addEventListener("click", removeRules);
 });
 
-let theme = "background.jpg";
+let theme = "grid-img.png";
 
 function showRules() {
     let rulesSct = document.getElementsByClassName("rules-sctn");
@@ -112,7 +112,7 @@ function dayTime() {
     let labels = document.getElementsByClassName("font");
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].setAttribute("src", "assets/images/day-time.jpg");
-        // imgs[i].style.borderColor = "white";
+        imgs[i].style.borderColor = "white";
     }
     document.body.style.backgroundImage = "url('assets/images/day-time.jpg')";
     labels[0].style.color = "black";
@@ -124,11 +124,11 @@ function nightTime() {
     let imgs = document.getElementsByTagName("img");
     let labels = document.getElementsByClassName("font");
     for (let i = 0; i < imgs.length; i++) {
-        imgs[i].setAttribute("src", "assets/images/background.jpg");
+        imgs[i].setAttribute("src", "assets/images/grid-img.png");
         // imgs[i].style.borderColor = "black";
     }
     document.body.style.backgroundImage = "url('assets/images/background.jpg')";
     labels[0].style.color = "white";
     labels[1].style.color = "white";
-    theme = "background.jpg";
+    theme = "grid-img.jpg";
 }
