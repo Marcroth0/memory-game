@@ -131,7 +131,7 @@ function nightTime() {
             "url('assets/images/background.jpg')";
     }
     for (let i = 0; i < btns.length; i++) {
-        btns[i].style.backgroundColor = "white;";
+        btns[i].style.backgroundColor = "#01394a";
     }
 }
 
