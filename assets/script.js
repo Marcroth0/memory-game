@@ -111,7 +111,7 @@ function dayTime() {
     let imgs = document.getElementsByTagName("img");
     let btns = document.getElementsByClassName("btn");
     for (let i = 0; i < imgs.length; i++) {
-        imgs[i].setAttribute("src", "assets/images/day-time.jpg");
+        imgs[i].setAttribute("src", "assets/images/day-time-grid.jpg");
         imgs[i].style.borderColor = "#eaddcb";
         document.body.style.backgroundImage =
             "url('assets/images/day-time.jpg')";
@@ -119,6 +119,7 @@ function dayTime() {
     for (let i = 0; i < btns.length; i++) {
         btns[i].style.backgroundColor = "#caa865";
     }
+    theme = "day-time-grid.jpg";
 }
 
 function nightTime() {
@@ -134,5 +135,3 @@ function nightTime() {
         btns[i].style.backgroundColor = "#01394a";
     }
 }
-
-// theme = "grid-img.jpg";
