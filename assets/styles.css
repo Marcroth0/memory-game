@@ -154,7 +154,7 @@ body {
         transform: scale(1);
     }
     to {
-        transform: scale(2.2);
+        transform: scale(4);
     }
 }
 
