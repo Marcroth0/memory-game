@@ -9,6 +9,17 @@
         <title>Memory game</title>
     </head>
     <body>
+        <!--You Won!-->
+        <div class="you-won">
+            <h2>YOU WON!</h2>
+            <button
+                class="reset-btn btn"
+                id="play-again"
+                onclick="resetGame(false)"
+            >
+                Play again?
+            </button>
+        </div>
         <div class="theme">
             <label class="font" for="day">Day</label>
             <input type="radio" onclick="dayTime()" name="time" />
@@ -22,6 +33,7 @@
                     Attempts: <span id="clickBoard">0</span>
                 </div>
             </div>
+
             <!-- Rules Section hidden-->
             <section class="rules-sctn">
                 <h2>How to play:</h2>
@@ -38,11 +50,6 @@
                     <button class="play-btn btn">Play!</button>
                 </div>
             </section>
-            <!--You Won!-->
-            <div class="you-won">
-                <h2>YOU WON!</h2>
-                <button class="reset-btn btn">Play again?</button>
-            </div>
 
             <div class="grid"></div>
             <div class="control-btns">

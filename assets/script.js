@@ -93,7 +93,7 @@ function checkForMatch() {
         if (pairMatch === cardArray.length / 2) {
             let youWon = document.getElementsByClassName("you-won");
             youWon[0].style.display = "flex";
-
+            youWon[0].classList.add("flip");
             //call popup "You won!" "play again"
         }
     } else {
@@ -108,7 +108,7 @@ function checkForMatch() {
 }
 
 // Reset game if "reset" button is clicked
-function resetGame() {
+function resetGame(display = true) {
     let grid = document.querySelector(".grid");
     grid.innerHTML = null;
     createBoard(grid, cardArray);
@@ -117,6 +117,10 @@ function resetGame() {
     pairMatch = 0;
     clickBoard.innerText = clicks;
     scoreBoard.innerText = pairMatch;
+    console.log("function called");
+    if (!display) {
+        document.getElementsByClassName("you-won")[0].style.display = "none";
+    }
 }
 
 // Reset the background for the images if user chooses light theme
