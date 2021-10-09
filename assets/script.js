@@ -1,3 +1,4 @@
+// Define Array of cards
 let cardArray = [
     { name: "athens", img: "assets/images/athens.png" },
     { name: "athens", img: "assets/images/athens.png" },
@@ -12,23 +13,6 @@ let cardArray = [
     { name: "rome", img: "assets/images/rome.png" },
     { name: "rome", img: "assets/images/rome.png" },
 ];
-
-//day time array
-
-// let cardArrayLight = [
-//     { name: "athens", img: "assets/images/athens.png" },
-//     { name: "athens", img: "assets/images/athens.png" },
-//     { name: "barcelona", img: "assets/images/barcelona.png" },
-//     { name: "barcelona", img: "assets/images/barcelona.png" },
-//     { name: "bari", img: "assets/images/bari.png" },
-//     { name: "bari", img: "assets/images/bari.png" },
-//     { name: "porto", img: "assets/images/porto.png" },
-//     { name: "porto", img: "assets/images/porto.png" },
-//     { name: "pisa", img: "assets/images/pisa.png" },
-//     { name: "pisa", img: "assets/images/pisa.png" },
-//     { name: "rome", img: "assets/images/rome.png" },
-//     { name: "rome", img: "assets/images/rome.png" },
-// ];
 
 // Define variables
 let clicks = 0;
@@ -50,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var scoreBoard = document.getElementById("scoreBoard");
 });
 
+// Show and remove game rules
 function showRules() {
     let rulesSct = document.getElementsByClassName("rules-sctn");
     rulesSct[0].style.display = "flex";
@@ -60,29 +45,36 @@ function removeRules() {
     rulesSct[0].style.display = "none";
 }
 
+// Create the game board with $theme var depending on light/dark theme
 function createBoard(grid, array) {
+    // Set default image background for cards
     for (let i = 0; i < array.length; i++) {
         let img = document.createElement("img");
         img.setAttribute("src", `assets/images/${theme}`);
         img.setAttribute("id", i);
+        theme == "grid-img.png"
+            ? (img.style.borderColor = "#086068")
+            : (img.style.borderColor = "#eaddcb");
         grid.appendChild(img);
     }
+    // Add event listener to each card on the board
     let imgs = document.querySelectorAll("img");
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].addEventListener("click", flipCards);
     }
 }
 
-//Randomly sort cards in the Array
+// Randomly sort cards in the Array
 function arrangeCards(array) {
     array.sort(() => 0.5 - Math.random());
 }
 
-//Flip the cards
+// Flip the cards
 function flipCards() {
     this.classList.add("flip");
     this.setAttribute("src", cardArray[this.id].img);
     cardsId.push(this.id);
+    // If two cards are clicked, check if it's a match
     if (cardsId.length === 2) {
         setTimeout(checkForMatch, 500);
     }
@@ -109,18 +101,26 @@ function checkForMatch() {
     cardsId = [];
 }
 
+// Reset game if "reset" button is clicked
 function resetGame() {
     let grid = document.querySelector(".grid");
     grid.innerHTML = null;
     createBoard(grid, cardArray);
     arrangeCards(cardArray);
+    clicks = 0;
+    pairMatch = 0;
+    clickBoard.innerText = clicks;
+    scoreBoard.innerText = pairMatch;
 }
 
+// Reset the background for the images if user chooses light theme
 function dayTime() {
     let imgs = document.getElementsByTagName("img");
     let btns = document.getElementsByClassName("btn");
     for (let i = 0; i < imgs.length; i++) {
-        imgs[i].setAttribute("src", "assets/images/day-time-grid.jpg");
+        if (imgs[i].getAttribute("src") == "assets/images/grid-img.png") {
+            imgs[i].setAttribute("src", "assets/images/day-time-grid.jpg");
+        }
         imgs[i].style.borderColor = "#eaddcb";
     }
     document.body.style.backgroundImage = "url('assets/images/day-time.jpg')";
@@ -130,15 +130,18 @@ function dayTime() {
     theme = "day-time-grid.jpg";
 }
 
+// Redundant? Could be done in a single "change theme" function
 function nightTime() {
     let imgs = document.getElementsByTagName("img");
     let btns = document.getElementsByClassName("btn");
     for (let i = 0; i < imgs.length; i++) {
-        imgs[i].setAttribute("src", "assets/images/grid-img.png");
+        // Continue the game when you change between themes
+        if (imgs[i].getAttribute("src") == "assets/images/day-time-grid.jpg") {
+            imgs[i].setAttribute("src", "assets/images/grid-img.png");
+        }
         imgs[i].style.borderColor = "#086068";
-        document.body.style.backgroundImage =
-            "url('assets/images/background.jpg')";
     }
+    document.body.style.backgroundImage = "url('assets/images/background.jpg')";
     for (let i = 0; i < btns.length; i++) {
         btns[i].style.backgroundColor = "#01394a";
     }
