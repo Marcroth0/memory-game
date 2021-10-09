@@ -137,6 +137,7 @@ body {
     display: none;
     z-index: 98;
     background-color: rgba(31, 29, 29, 0.5);
+    padding-bottom: 100px;
 }
 .you-won h2 {
     font-weight: 700px;
