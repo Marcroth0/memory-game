@@ -23,7 +23,7 @@ let theme = "grid-img.png";
 document.addEventListener("DOMContentLoaded", function () {
     let grid = document.querySelector(".grid");
     createBoard(grid, cardArray);
-    arrangeCards(cardArray);
+    // arrangeCards(cardArray);
 
     let rulesBtn = document.getElementsByClassName("rules-btn");
     rulesBtn[0].addEventListener("click", showRules);
@@ -52,6 +52,7 @@ function createBoard(grid, array) {
         let img = document.createElement("img");
         img.setAttribute("src", `assets/images/${theme}`);
         img.setAttribute("id", i);
+        // Make resetGame consistent with current theme
         theme == "grid-img.png"
             ? (img.style.borderColor = "#086068")
             : (img.style.borderColor = "#eaddcb");
@@ -85,11 +86,16 @@ function checkForMatch() {
     let imageOne = document.getElementById(cardsId[0]);
     let imageTwo = document.getElementById(cardsId[1]);
     if (imageOne.src === imageTwo.src && imageOne.id != imageTwo.id) {
-        alert("Match!");
         imageOne.style.boxShadow = "0px 0px 5px #fff";
         imageTwo.style.boxShadow = "0px 0px 5px #fff";
         pairMatch += 1;
         scoreBoard.innerText = pairMatch;
+        if (pairMatch === cardArray.length / 2) {
+            let youWon = document.getElementsByClassName("you-won");
+            youWon[0].style.display = "flex";
+
+            //call popup "You won!" "play again"
+        }
     } else {
         imageOne.setAttribute("src", `assets/images/${theme}`);
         imageTwo.setAttribute("src", `assets/images/${theme}`);

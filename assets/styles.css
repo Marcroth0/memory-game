@@ -143,6 +143,24 @@ body {
     display: none;
     z-index: 99;
 }
+.you-won {
+    width: 40%;
+    height: 300px;
+    background-color: transparent;
+    position: absolute;
+    margin: 15% 30% 0 30%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    z-index: 99;
+}
+.you-won h2 {
+    font-weight: 500px;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
 
 .rules {
     margin: 50px;
