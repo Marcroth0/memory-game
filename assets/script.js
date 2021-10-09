@@ -23,7 +23,7 @@ let theme = "grid-img.png";
 document.addEventListener("DOMContentLoaded", function () {
     let grid = document.querySelector(".grid");
     createBoard(grid, cardArray);
-    arrangeCards(cardArray);
+    //arrangeCards(cardArray);
 
     let rulesBtn = document.getElementsByClassName("rules-btn");
     rulesBtn[0].addEventListener("click", showRules);
