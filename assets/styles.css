@@ -132,6 +132,7 @@ body {
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .you-won {
     top: 0;
     width: 100%;
@@ -169,4 +170,8 @@ body {
     display: flex;
     border-color: black;
     border-radius: 40px;
+}
+
+.font-weight {
+    font-weight: bold;
 }
