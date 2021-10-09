@@ -15,20 +15,26 @@ let cardArray = [
 
 //day time array
 
-let cardArrayLight = [
-    { name: "athens", img: "assets/images/athens.png" },
-    { name: "athens", img: "assets/images/athens.png" },
-    { name: "barcelona", img: "assets/images/barcelona.png" },
-    { name: "barcelona", img: "assets/images/barcelona.png" },
-    { name: "bari", img: "assets/images/bari.png" },
-    { name: "bari", img: "assets/images/bari.png" },
-    { name: "porto", img: "assets/images/porto.png" },
-    { name: "porto", img: "assets/images/porto.png" },
-    { name: "pisa", img: "assets/images/pisa.png" },
-    { name: "pisa", img: "assets/images/pisa.png" },
-    { name: "rome", img: "assets/images/rome.png" },
-    { name: "rome", img: "assets/images/rome.png" },
-];
+// let cardArrayLight = [
+//     { name: "athens", img: "assets/images/athens.png" },
+//     { name: "athens", img: "assets/images/athens.png" },
+//     { name: "barcelona", img: "assets/images/barcelona.png" },
+//     { name: "barcelona", img: "assets/images/barcelona.png" },
+//     { name: "bari", img: "assets/images/bari.png" },
+//     { name: "bari", img: "assets/images/bari.png" },
+//     { name: "porto", img: "assets/images/porto.png" },
+//     { name: "porto", img: "assets/images/porto.png" },
+//     { name: "pisa", img: "assets/images/pisa.png" },
+//     { name: "pisa", img: "assets/images/pisa.png" },
+//     { name: "rome", img: "assets/images/rome.png" },
+//     { name: "rome", img: "assets/images/rome.png" },
+// ];
+
+// Define variables
+let clicks = 0;
+let pairMatch = 0;
+let cardsId = [];
+let theme = "grid-img.png";
 
 document.addEventListener("DOMContentLoaded", function () {
     let grid = document.querySelector(".grid");
@@ -39,9 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     rulesBtn[0].addEventListener("click", showRules);
     let startBtn = document.getElementsByClassName("play-btn");
     startBtn[0].addEventListener("click", removeRules);
-});
 
-let theme = "grid-img.png";
+    var clickBoard = document.getElementById("clickBoard");
+    var scoreBoard = document.getElementById("scoreBoard");
+});
 
 function showRules() {
     let rulesSct = document.getElementsByClassName("rules-sctn");
@@ -71,9 +78,7 @@ function arrangeCards(array) {
     array.sort(() => 0.5 - Math.random());
 }
 
-//flip the cards
-
-let cardsId = [];
+//Flip the cards
 function flipCards() {
     this.classList.add("flip");
     this.setAttribute("src", cardArray[this.id].img);
@@ -91,12 +96,16 @@ function checkForMatch() {
         alert("Match!");
         imageOne.style.boxShadow = "0px 0px 5px #fff";
         imageTwo.style.boxShadow = "0px 0px 5px #fff";
+        pairMatch += 1;
+        scoreBoard.innerText = pairMatch;
     } else {
         imageOne.setAttribute("src", `assets/images/${theme}`);
         imageTwo.setAttribute("src", `assets/images/${theme}`);
         imageOne.classList.remove("flip");
         imageTwo.classList.remove("flip");
     }
+    clicks += 1;
+    clickBoard.innerText = clicks;
     cardsId = [];
 }
 
@@ -113,9 +122,8 @@ function dayTime() {
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].setAttribute("src", "assets/images/day-time-grid.jpg");
         imgs[i].style.borderColor = "#eaddcb";
-        document.body.style.backgroundImage =
-            "url('assets/images/day-time.jpg')";
     }
+    document.body.style.backgroundImage = "url('assets/images/day-time.jpg')";
     for (let i = 0; i < btns.length; i++) {
         btns[i].style.backgroundColor = "#caa865";
     }
