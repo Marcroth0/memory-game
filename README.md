@@ -1,6 +1,6 @@
 # City Memory Game
 
-Live link: https://marcroth0.github.io/p1-secret-bar/
+Live link: https://marcroth0.github.io/memory-game/
 
 ### Table of Contents
 
@@ -14,30 +14,39 @@ Live link: https://marcroth0.github.io/p1-secret-bar/
 
 ### Organisation Goals
 
--   Make the customer interested in the secret.
--   Have a website that fits the theme.
--   Attract the "right" customers.
+-   Create an interactive game that is clear and simple
+-   Create a layout that is user friendly
+-   Please the users with an alteernative in color scheme
+-   Attract the users by using famous european sites
+-
 
 ### Organisation Stories
 
--   I want to be able to present the website in a different way compared to other bars.
--   I want simple navigation to the important parts of the page (the story)
--   I want the story to be a big part of the reason people sign up.
+-
+-
+-
 
 ### User Stories
 
-1.  As a user I want to have a clear knowing of the websites purpose.
-2.  As a user I want to feel engaged in the website.
-3.  As a user I want to know what drinks are offered.
-4.  As a user I appreciate friendliness towards animals.
-5.  As a user I want the feeling of being a selected few.
-6.  As a user I want to easily navigate through the website.
+1. As a user I want to easily know the rules of the game
+2. As a user I want to easily understand how to start the game
+3. As a user I need to know what my score is
+4. As a user I need to know when the game has been won
+5. As a user I want the possibility to be able to reset the game
 
-### Target audience
+## Strategy
 
-## Features
+Memory is a classic game consisting of flipping two cards until you get a match. The game goes along until every card has been matched. This time with a theme of famous european landmarks.
 
 ## Design
+
+### Color palette day
+
+![day-palette](assets/images/day-palette.png)
+
+### Color palette night
+
+![night-palette](assets/images/night-palette.png)
 
 ### Planning
 
@@ -75,8 +84,6 @@ I tested the responsiveness of the site on the below units, using chrome dev as 
 -   Safari
 -   Edge
 
-### Testing requirements:
-
 ### Lighthouse
 
 ### Validator Testing
@@ -84,8 +91,6 @@ I tested the responsiveness of the site on the below units, using chrome dev as 
 ## Problems and Solutions
 
 ## Unfixed Bugs
-
-### Chrome auto-fill:
 
 ## Features Left to Implement
 
