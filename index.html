@@ -6,6 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/styles.css" />
         <meta name="description" content="city memory game" />
+        <link
+            rel="shortcut icon"
+            type="image/jpg"
+            href="assets/images/favicon-memory.png"
+        />
+
         <script src="assets/script.js"></script>
         <title>Memory game</title>
     </head>
@@ -21,6 +27,7 @@
                 Play again?
             </button>
         </div>
+        <!--Theme choice-->
         <div class="theme">
             <label class="font" for="day">Day</label>
             <input type="radio" id="day" onclick="dayTime()" name="time" />
@@ -33,6 +40,7 @@
                 checked
             />
         </div>
+        <!--Header and counters-->
         <h1>CITY MEMORY</h1>
         <div class="container">
             <div class="data">
@@ -58,7 +66,7 @@
                     <button class="play-btn btn">Play!</button>
                 </div>
             </section>
-
+            <!--Game section-->
             <div class="grid"></div>
             <div class="control-btns">
                 <button class="reset-btn btn" onclick="resetGame()">
@@ -67,7 +75,5 @@
                 <button class="rules-btn btn">Rules</button>
             </div>
         </div>
-
-        <!--Rules-->
     </body>
 </html>
