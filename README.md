@@ -40,6 +40,9 @@ Memory is a classic game consisting of flipping two cards until you get a match.
 
 ## Design
 
+The design consists of two themes. One day, one night. This to make it easier for users to play depending on the time of day, to releave stress to the eyes.
+I chose the colors based on the palette of the themes background.
+
 ### Color palette day
 
 ![day-palette](assets/images/day-palette.png)
