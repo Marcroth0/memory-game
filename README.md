@@ -112,6 +112,8 @@ I tested the responsiveness of the site on the below units, using chrome dev as 
 -   Safari
 -   Edge
 
+### Functional testing
+
 ### Lighthouse
 
 ![lighthouse](assets/images/lighthouse-memory-readme.png)

@@ -19,6 +19,7 @@ let clicks = 0;
 let pairMatch = 0;
 let cardsId = [];
 let theme = "grid-img.png";
+let isTransitioning = false;
 
 document.addEventListener("DOMContentLoaded", function () {
     let grid = document.querySelector(".grid");
@@ -73,12 +74,16 @@ function removeRules() {
 
 // Flip the cards
 function flipCards() {
-    this.classList.add("flip");
-    this.setAttribute("src", cardArray[this.id].img);
-    cardsId.push(this.id);
-    // If two cards are clicked, check if it's a match
-    if (cardsId.length === 2) {
-        setTimeout(checkForMatch, 500);
+    if (isTransitioning == true) {
+    } else {
+        this.classList.add("flip");
+        this.setAttribute("src", cardArray[this.id].img);
+        cardsId.push(this.id);
+        // If two cards are clicked, check if it's a match
+        if (cardsId.length === 2) {
+            isTransitioning = true;
+            setTimeout(checkForMatch, 500);
+        }
     }
 }
 
@@ -107,6 +112,7 @@ function checkForMatch() {
     clicks += 1;
     clickBoard.innerText = clicks;
     cardsId = [];
+    isTransitioning = false;
 }
 
 // Reset game if "reset" button is clicked
