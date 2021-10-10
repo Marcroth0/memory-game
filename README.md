@@ -20,12 +20,6 @@ Live link: https://marcroth0.github.io/memory-game/
 -   Attract the users by using famous european sites
 -
 
-### Organisation Stories
-
--
--
--
-
 ### User Stories
 
 1. As a user I want to easily know the rules of the game
@@ -109,6 +103,8 @@ I tested the responsiveness of the site on the below units, using chrome dev as 
 -   Edge
 
 ### Lighthouse
+
+![lighthouse](assets/images/lighthouse-memory-readme.png)
 
 ### Validator Testing
 
