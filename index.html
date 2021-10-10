@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/styles.css" />
+        <meta name="description" content="city memory game" />
         <script src="assets/script.js"></script>
         <title>Memory game</title>
     </head>
@@ -21,10 +22,16 @@
             </button>
         </div>
         <div class="theme">
-            <label class="font" for="day">Day</label>
-            <input type="radio" onclick="dayTime()" name="time" />
-            <label class="font" for="night">Night</label>
-            <input type="radio" onclick="nightTime()" name="time" checked />
+            <label class="font" for="day" name="time">Day</label>
+            <input type="radio" id="day" onclick="dayTime()" name="time" />
+            <label class="font" for="night" name="time">Night</label>
+            <input
+                type="radio"
+                id="night"
+                onclick="nightTime()"
+                name="time"
+                checked
+            />
         </div>
         <h1>CITY MEMORY</h1>
         <div class="container">

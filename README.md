@@ -79,9 +79,10 @@ The only thing that strayed from the initial wireframe was the addition of the t
 
 ### Fonts
 
-### Structure
+font-family: "Roboto", sans-serif (The rest)
+font-family: "Alfa Slab One" (H1/H2)
 
-### Imagery
+### Structure
 
 ## Testing
 
