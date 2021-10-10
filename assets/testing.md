@@ -41,3 +41,5 @@ Testing win function on night mode.
 Testing win function on day mode.
 
 ![Day win](images/testing-win-day.gif)
+
+Go back to [README](../README.md)
