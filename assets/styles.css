@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +12,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
-    font-family: "Alfa Slab One", cursive;
-    font-family: "Roboto", sans-serif;
 }
 
 .score {
@@ -121,10 +121,10 @@ h1 {
 
 .rules-sctn {
     width: 40%;
-    height: 300px;
+    height: 330px;
     background-color: rgb(208 227 237 / 72%);
     position: absolute;
-    margin: 15% 30% 0 30%;
+    margin: 10% 30%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -182,7 +182,7 @@ h1 {
 }
 
 /* Media Queries */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .data {
         flex-direction: column;
         padding: 0;
@@ -198,6 +198,10 @@ h1 {
     }
     h1 {
         font-size: 50px;
+    }
+    .rules-sctn {
+        width: 70%;
+        margin: 30% 15%;
     }
 }
 /* iPad Pro */
