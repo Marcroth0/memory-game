@@ -113,6 +113,7 @@ h1 {
 }
 .font {
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 .theme {
@@ -171,7 +172,7 @@ h1 {
 }
 
 .rules {
-    margin: 50px;
+    margin: 30px;
     display: flex;
     border-color: black;
     border-radius: 40px;
