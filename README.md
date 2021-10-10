@@ -75,9 +75,7 @@ I wireframed it using Balsamiq.
 
 ![wireframe](assets/images/readme-planning.png)
 
-### Details
-
-### Mobile Details:
+The only thing that strayed from the initial wireframe was the addition of the two themes.
 
 ### Fonts
 

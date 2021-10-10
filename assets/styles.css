@@ -180,3 +180,29 @@ h1 {
 .font-weight {
     font-weight: bold;
 }
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+    .data {
+        flex-direction: column;
+        padding: 0;
+    }
+    .grid {
+        height: 400px;
+        width: auto;
+        margin-bottom: 50px;
+    }
+    .grid img {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
+/* iPad Pro */
+@media only screen and (min-width: 768px) and (max-width: 1370px) and (orientation: portrait) {
+    body {
+        height: 1400px;
+    }
+}
