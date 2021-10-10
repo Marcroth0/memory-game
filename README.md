@@ -1,5 +1,7 @@
 # City Memory Game
 
+![amiresponsive](assets/images/responsive-readme.png)
+
 Live link: https://marcroth0.github.io/memory-game/
 
 ### Table of Contents
@@ -9,6 +11,16 @@ Live link: https://marcroth0.github.io/memory-game/
     2. [Organisational Stories](#organisation-stories)
     3. [User Stories](#user-stories)
     4. [Target Audience](#target-audience)
+2. [Design](#design)
+    1. [Box Shadow](#box-shadow)
+    2. [Color palette day](#color-palette-day)
+    3. [Color palette night](#color-palette-night)
+3. [Planning](#planning)
+    1. [Fonts](#fonts)
+4. [Testing](#testing)
+    1. [Lighthouse](#lighthouse)
+    2. [Validator](#validator-testing)
+5. [Credits](#credits)
 
 ## Goals
 
@@ -76,8 +88,6 @@ The only thing that strayed from the initial wireframe was the addition of the t
 font-family: "Roboto", sans-serif (The rest)
 font-family: "Alfa Slab One" (H1/H2)
 
-### Structure
-
 ## Testing
 
 I tested the responsiveness of the site on the below units, using chrome dev as well as some in real life testing:
@@ -109,13 +119,24 @@ I tested the responsiveness of the site on the below units, using chrome dev as 
 ### Validator Testing
 
 W3 HTML Validator:
+
 ![htmlvalidator](assets/images/html-validator-readme.png)
 
-## Problems and Solutions
+W3 CSS Validator:
+![cssvalidator](assets/images/css-validator-readme.png)
+
+JS validator:
+![jsvalidator](assets/images/js-validator-readme.png)
+
+The issues portrayed I deemed not needing a fix, considering the "defined but never used" is functions being called in the html-document.
 
 ## Unfixed Bugs
 
+No known bugs.
+
 ## Features Left to Implement
+
+-   Implement more difficult settings, one being more boxes, and a hard-mode requiring a correct answer to a question relevant to the actual building (if correct guess, shave off a point on 'clicks')
 
 ## Deployment
 
@@ -124,11 +145,11 @@ W3 HTML Validator:
     -   From the source section drop-down menu, select the Master Branch
     -   Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - https://marcroth0.github.io/p1-secret-bar/
+The live link can be found here - https://marcroth0.github.io/memory-game/
 
 ## Credits
 
--   Assistance in keeping my images compressed and give better performance to the website was done by [ImgBot](https://imgbot.net/app/)
+-   Images used was taken from [Pexels](https://www.pexels.com/photo/photo-of-skyline-at-night-3075993/)
 
 ### Content
 
