@@ -10,6 +10,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
+    font-family: "Alfa Slab One", cursive;
+    font-family: "Roboto", sans-serif;
 }
 
 .score {
@@ -20,6 +22,13 @@ body {
 .click {
     color: #fff;
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Alfa Slab One";
+    font-size: 60px;
+    color: #fff;
 }
 
 .grid {
@@ -27,7 +36,7 @@ body {
     height: 300px;
     align-content: center;
     flex-wrap: wrap;
-    margin: 60px auto;
+    margin: 10px auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 223px;
     background-color: transparent;
@@ -56,6 +65,7 @@ body {
     display: inline-block;
     text-align: center;
     position: relative;
+    font-family: "Roboto", sans-serif;
     border-radius: 10px;
     transition: 1s;
     padding: 0.3em 1.2em;
@@ -99,6 +109,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 30px 0 30px;
+    font-family: "Roboto", sans-serif;
 }
 .font {
     color: white;
@@ -123,6 +134,7 @@ body {
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 .you-won {
