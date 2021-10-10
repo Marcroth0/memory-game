@@ -77,7 +77,7 @@ Day:
 
 ### Planning
 
-I wireframed it using Balsamiq.
+I wireframed it using Balsamiq. Considering it was a one-page game it didn't require a lot of planning besides the outline viewed below.
 
 ![wireframe](assets/images/readme-planning.png)
 
@@ -137,6 +137,7 @@ No known bugs.
 ## Features Left to Implement
 
 -   Implement more difficult settings, one being more boxes, and a hard-mode requiring a correct answer to a question relevant to the actual building (if correct guess, shave off a point on 'clicks')
+-   An high-score feature.
 
 ## Deployment
 
@@ -149,8 +150,8 @@ The live link can be found here - https://marcroth0.github.io/memory-game/
 
 ## Credits
 
--   Images used was taken from [Pexels](https://www.pexels.com/photo/photo-of-skyline-at-night-3075993/)
-
-### Content
+-   Some of the basic structure was inspired by [Fakorede Damilola](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
 
 ## Media
+
+-   Images used was taken from [Pexels](https://www.pexels.com/photo/photo-of-skyline-at-night-3075993/)
