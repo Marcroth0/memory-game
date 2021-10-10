@@ -53,6 +53,10 @@ I chose the colors based on the palette of the themes background.
 
 ### Planning
 
+I wireframed it using Balsamiq.
+
+![wireframe](assets/images/readme-planning.png)
+
 ### Details
 
 ### Mobile Details:
