@@ -42,6 +42,7 @@ function createBoard(grid, array) {
         let img = document.createElement("img");
         img.setAttribute("src", `assets/images/${theme}`);
         img.setAttribute("id", i);
+        img.setAttribute("alt", "city skyline");
         // Make resetGame consistent with current theme
         img.style.borderColor = theme == "grid-img.png" ? "#086068" : "#eaddcb";
         grid.appendChild(img);
