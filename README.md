@@ -43,6 +43,24 @@ Memory is a classic game consisting of flipping two cards until you get a match.
 The design consists of two themes. One day, one night. This to make it easier for users to play depending on the time of day, to releave stress to the eyes.
 I chose the colors based on the palette of the themes background.
 
+Considering it being a one-page site it needed to be visually pleasing the moment you enter it.
+
+Night:
+![night-theme](assets/images/night-readme.png)
+
+Day:
+![day-theme](assets/images/day-readme.png)
+
+### Box Shadow
+
+It being a "instant play" game I needed to make the grid pop. Adding the shadow behind the tiles gives them a "floating" visual.
+
+Night:
+![night-theme](assets/images/night-shadow-readme.png)
+
+Day:
+![day-theme](assets/images/day-shadow-readme.png)
+
 ### Color palette day
 
 ![day-palette](assets/images/day-palette.png)
