@@ -108,6 +108,9 @@ I tested the responsiveness of the site on the below units, using chrome dev as 
 
 ### Validator Testing
 
+W3 HTML Validator:
+![htmlvalidator](assets/images/html-validator-readme.png)
+
 ## Problems and Solutions
 
 ## Unfixed Bugs
