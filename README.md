@@ -7,10 +7,8 @@ Live link: https://marcroth0.github.io/memory-game/
 ### Table of Contents
 
 1. [Goals](#goals)
-    1. [Organisational Goals](#organisation-goals)
-    2. [Organisational Stories](#organisation-stories)
-    3. [User Stories](#user-stories)
-    4. [Target Audience](#target-audience)
+    1. [Organisational Goals](#organisation-goals
+    2. [User Stories](#user-stories)
 2. [Design](#design)
     1. [Box Shadow](#box-shadow)
     2. [Color palette day](#color-palette-day)
@@ -199,4 +197,4 @@ The live link can be found here - https://marcroth0.github.io/memory-game/
 
 ## Media
 
--   Images used was taken from [Pexels](https://www.pexels.com/photo/photo-of-skyline-at-night-3075993/)
+-   Images used were taken from [Pexels](https://www.pexels.com/photo/photo-of-skyline-at-night-3075993/)
