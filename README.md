@@ -28,7 +28,7 @@ Live link: https://marcroth0.github.io/memory-game/
 
 -   Create an interactive game that is clear and simple
 -   Create a layout that is user friendly
--   Please the users with an alteernative in color scheme
+-   Please the users with an alternative in color scheme
 -   Attract the users by using famous european sites
 
 ### User Stories
