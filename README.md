@@ -7,7 +7,7 @@ Live link: https://marcroth0.github.io/memory-game/
 ### Table of Contents
 
 1. [Goals](#goals)
-    1. [Organisational Goals](#organisation-goals
+    1. [Organisational Goals](#organisation-goals)
     2. [User Stories](#user-stories)
 2. [Design](#design)
     1. [Box Shadow](#box-shadow)
